@@ -71,9 +71,28 @@
             color: #ddd;
         }
         
-        .formulario{
-            display: flex;
+        fieldset{
+            padding-right: 600px;
         }
+
+        .formulario label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .formulario input[type="text"],
+    .formulario input[type="email"],
+    .formulario input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .formulario input[type="radio"] {
+        margin-left: 10px;
+    }
     </style>
     <title>Document</title>
 </head>
@@ -90,17 +109,17 @@
                     </tr>
                     <tr>
                         <td>Haburguesa</td>
-                        <td></td>
+                        <td><img src="img/hamburguesa-con-guacamole.jpg" alt="hamburguesa"></td>
                         <td>5 euros</td>
                     </tr>
                     <tr>
                         <td>Paella</td>
-                        <td></td>
+                        <td><img src="img/Paella.jpeg" alt="paella"></td>
                         <td>15 euros</td>
                     </tr>
                     <tr>
                         <td>Sadnwich mixto</td>
-                        <td></td>
+                        <td><img src="img/mixto.jpeg" alt="sandwich mixto"></td>
                         <td>3.5 euros</td>
                     </tr>
                 </table>
