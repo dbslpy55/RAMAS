@@ -70,6 +70,10 @@
         footer i:hover {
             color: #ddd;
         }
+        
+        .formulario{
+            display: flex;
+        }
     </style>
     <title>Document</title>
 </head>
@@ -103,26 +107,28 @@
             </article>
             <article class="formulario">
                 <form action="#">
-                    <p>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="usuario" id="usuario">
-                    </p>
-                    <p>
-                        <label for="apellido">Apellidos</label>
-                        <input type="text" name="apellido" id="apellido">
-                    </p>
-                    <p>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    </p>
-                    <p>
-                        <label for="contrasena">Contraseña</label>
-                        <input type="password" name="contrasena" id="contrasena">
-                    </p>
-                    <p>
-                        <label for="tipo se subscripcion">gratuito</label>
-                        <input type="radio" name="gratuito" id="gratuito">
-                    </p>
+                    <fieldset>
+                        <legend>Subscripción gratuita</legend>
+                        <p>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="usuario" id="usuario">
+                        </p>
+                        <p>
+                            <label for="apellido">Apellidos</label>
+                            <input type="text" name="apellido" id="apellido">
+                        </p>
+                        <p>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </p>
+                        <p>
+                            <label for="contrasena">Contraseña</label>
+                            <input type="password" name="contrasena" id="contrasena">
+                        </p>
+                        <p>
+                            <button type="submit">Enviar Datos</button>
+                        </p>
+                    </fieldset>
                 </form>
             </article>
         </div>
